@@ -7,7 +7,9 @@
       "Bash(pip install:*)",
       "Bash(streamlit --version)",
       "Bash(python:*)",
-      "Bash(pytest:*)"
+      "Bash(pytest:*)",
+      "Bash(.venvScriptsActivate.ps1)",
+      "Bash(.\\venv\\Scripts\\python.exe -m pip install:*)"
     ],
     "deny": [],
     "ask": []
