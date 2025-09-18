@@ -1,0 +1,1 @@
+"""UI components for Git Repository Analyzer."""

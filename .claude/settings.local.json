@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:/Users/simon/source/repos/git-repo-analyzer/venv/Scripts/Activate.ps1)",
+      "Bash(./venv/Scripts/Activate.ps1)",
+      "Bash(echo $VIRTUAL_ENV)",
+      "Bash(pip install:*)",
+      "Bash(streamlit --version)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

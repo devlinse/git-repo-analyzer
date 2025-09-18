@@ -1,0 +1,32 @@
+[global]
+developmentMode = false
+
+[server]
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 1024
+headless = false
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[theme]
+base = "light"
+primaryColor = "#FF6B35"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[ui]
+hideTopBar = false
+hideSidebarNav = false
+
+[logger]
+level = "info"
+
+[client]
+caching = true
+displayEnabled = true
