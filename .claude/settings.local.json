@@ -6,7 +6,8 @@
       "Bash(echo $VIRTUAL_ENV)",
       "Bash(pip install:*)",
       "Bash(streamlit --version)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(pytest:*)"
     ],
     "deny": [],
     "ask": []

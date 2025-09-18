@@ -13,13 +13,13 @@ from git_analyzer.config import settings
 def main():
     """Main application entry point."""
     st.set_page_config(
-        page_title=settings.app_title,
-        page_icon=settings.app_icon,
-        layout="wide",
+        page_title=settings.ui.app_title,
+        page_icon=settings.ui.app_icon,
+        layout=settings.ui.layout,
         initial_sidebar_state="expanded"
     )
 
-    st.title(f"{settings.app_icon} {settings.app_title}")
+    st.title(f"{settings.ui.app_icon} {settings.ui.app_title}")
 
     # Sidebar navigation
     st.sidebar.title("Navigation")
@@ -216,20 +216,20 @@ def show_settings_page():
             "Maximum repository size (MB)",
             min_value=1,
             max_value=2000,
-            value=settings.max_repo_size_mb
+            value=settings.analysis.max_repo_size_mb
         )
         clone_timeout = st.number_input(
             "Clone timeout (seconds)",
             min_value=30,
             max_value=600,
-            value=settings.clone_timeout_seconds
+            value=settings.analysis.clone_timeout_seconds
         )
     with col2:
         analysis_timeout = st.number_input(
             "Analysis timeout (seconds)",
             min_value=60,
             max_value=1800,
-            value=settings.analysis_timeout_seconds
+            value=settings.analysis.analysis_timeout_seconds
         )
 
     if st.button("Save Settings"):
@@ -237,7 +237,8 @@ def show_settings_page():
 
     # System Info
     st.subheader("System Information")
-    st.info(f"Application Version: {settings.__dict__.get('version', '0.1.0')}")
+    import git_analyzer
+    st.info(f"Application Version: {git_analyzer.__version__}")
 
 
 if __name__ == "__main__":
