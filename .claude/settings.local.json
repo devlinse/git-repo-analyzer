@@ -9,7 +9,16 @@
       "Bash(python:*)",
       "Bash(pytest:*)",
       "Bash(.venvScriptsActivate.ps1)",
-      "Bash(.\\venv\\Scripts\\python.exe -m pip install:*)"
+      "Bash(.\\venv\\Scripts\\python.exe -m pip install:*)",
+      "Bash(venv/Scripts/python.exe -m pytest tests/test_github.py -v)",
+      "Bash(venv/Scripts/python.exe -m pip install:*)",
+      "Bash(.venvScriptspython.exe -m pytest teststest_repository_manager.py -v)",
+      "Bash(venv/Scripts/python.exe -m pytest tests/test_repository_manager.py -v)",
+      "Bash(venv/Scripts/python.exe -m pytest tests/test_repository_manager.py -v --no-cov)",
+      "Bash(venv/Scripts/python.exe -m pytest tests/test_repository_manager.py -v -o addopts=\"\")",
+      "Bash(venv/Scripts/python.exe -m py_compile:*)",
+      "Bash(venv/Scripts/python.exe -c \"import sys; sys.path.insert(0, ''src''); import git_analyzer.services.repository_manager\")",
+      "Bash(venv/Scripts/python.exe -c \"import sys; sys.path.insert(0, ''src''); from git_analyzer.services import RepositoryManager, CloneOptions, RepositoryMetadata\")"
     ],
     "deny": [],
     "ask": []

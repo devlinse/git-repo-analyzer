@@ -14,9 +14,25 @@ from .git_platform import (
     InvalidUrlError,
     RepositoryTooLargeError,
 )
+from .github import GitHubService
+from .repository_manager import (
+    RepositoryManager,
+    TempDirectoryManager,
+    CloneOptions,
+    RepositoryMetadata,
+    CloneResult,
+    ProgressCallback,
+)
 
 __all__ = [
     "GitPlatformService",
+    "GitHubService",
+    "RepositoryManager",
+    "TempDirectoryManager",
+    "CloneOptions",
+    "RepositoryMetadata",
+    "CloneResult",
+    "ProgressCallback",
     "Repository",
     "RepositoryVisibility",
     "AuthenticationType",
